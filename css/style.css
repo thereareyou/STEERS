@@ -269,15 +269,80 @@ h3 {
 
 /* about end */
 
+/* portfolio start */
 
-.custom-box {
-  position: absolute;
-  width: 700px;
-  height: 400px;
-  background: #fff9f9;
-  border: 3px solid #c9002b;
-  border-radius: 15px;
-
-  z-index: 1;
+.portfolio_title {
+  width: 147px;
 }
 
+.portfolio__content h1 {
+  width: 758px;
+  margin-top: 55px;
+  margin-bottom: 50px;
+}
+
+.portfolio__img {
+  width: 402px;
+  height: 426px;
+  background: plum;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+}
+
+.portfolio__carousel {
+  display: flex;
+}
+
+.carousel__content {
+  position: relative;
+  width: 773px;
+  height: 425px;
+  background: url(../img/portfolio-bg.svg) no-repeat;
+  padding: 39px;
+}
+
+.carousel__title {
+}
+
+.carousel__company-name {
+  font-size: 55px;
+  margin: 15px 0 39px 0;
+}
+
+.carousel__description {
+  max-width: 695px;
+  color: #050301;
+  opacity: 50%;
+}
+
+.btns {
+  width: 20%;
+  height: 100px;
+  background: #fff0f2;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+
+.portfolio__description {
+  font-size: 40px;
+  font-weight: 400;
+  width: 935px;
+  margin-top: 80px;
+  margin-bottom: 15px;
+}
+
+.portfolio__download {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio__btn {
+  width: 125px;
+  height: 62px;
+}
+
+/* portfolio end */
