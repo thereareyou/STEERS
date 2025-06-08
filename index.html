@@ -13,7 +13,7 @@
 
   <!-- heder start -->
 
-  <header class="header">
+  <header class="header" id="header-section">
     <div class="container">
       <div class="header__content">
         <div class="header__logo">
@@ -28,8 +28,8 @@
 
         <nav class="header__nav">
           <ul class="menu">
-            <li class="menu__list"><a href="#">О нас</a></li>
-            <li class="menu__list"><a href="#">Портфолио</a></li>
+            <li class="menu__list"><a href="#about-section">О нас</a></li>
+            <li class="menu__list"><a href="#portfolio-section">Портфолио</a></li>
             <li class="menu__list"><a href="#">Контакты</a></li>
             <li class="menu__list"><a href="#">Технологии</a></li>
             <li class="menu__list"><a href="#">Услуги</a></li>
@@ -119,7 +119,7 @@
         </div>
 
         <div class="arrow">
-          <a href="#about-section">
+          <a href="#portfolio-section">
             <img src="./img/arrow.png" alt="">
           </a>
         </div>
@@ -131,7 +131,7 @@
 
   <!-- portfolio start -->
 
-  <section class="portfolio" id="#setion-portfolio">
+  <section class="portfolio" id="portfolio-section">
     <div class="container">
       <div class="portfolio__content">
         <h3 class="portfolio_title">Портфолио</h3>
@@ -139,27 +139,81 @@
 
 
         <div class="portfolio__carousel">
-          <div class="portfolio__img">
-            <img src="./img/phone.png" alt="">
+
+          <div class="carousel__img">
+            <img src="./img/image1.png" alt="">
           </div>
 
+          <div class="carousel__img">
+            <img src="./img/image2.png" alt="">
+          </div>
+
+          <div class="carousel__img">
+            <img src="./img/image3.png" alt="">
+          </div>
+
+          <div class="carousel__img">
+            <img src="./img/image4.png" alt="">
+          </div>
+
+
           <div class="carousel__content">
-            <p class="carousel__title">разработка мобильного приложения</p>
-            <h2 class="carousel__company-name">СКС Ломбард</h2>
-            <p class="carousel__description">СКС Ломбард - Региональная сеть ломбардов «СКС Ломбард». Мобильное
-              приложение
-              Группы компаний СКС
-              предоставляет клиентам возможность оперативно узнавать текущую задолженность, оплачивать договоры и
-              уточнять
-              сроки займов. Удобство использования и доступность информации сделают взаимодействие с финансовыми
-              услугами
-              более эффективным.</p>
-            <div class="btns">
+            <div class="carousel__text">
+              <p class="carousel__title">разработка мобильного приложения</p>
+              <h2 class="carousel__company-name">СКС Ломбард</h2>
+              <p class="carousel__description">СКС Ломбард - Региональная сеть ломбардов «СКС Ломбард». Мобильное
+                приложение
+                Группы компаний СКС
+                предоставляет клиентам возможность оперативно узнавать текущую задолженность, оплачивать договоры и
+                уточнять
+                сроки займов. Удобство использования и доступность информации сделают взаимодействие с финансовыми
+                услугами
+                более эффективным.</p>
+            </div>
+
+            <div class="carousel__text">
+              <p class="carousel__title">text2</p>
+              <h2 class="carousel__company-name">Text2</h2>
+              <p class="carousel__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis
+                velit delectus? Nesciunt, maxime? Eveniet voluptatum, quisquam minus deleniti sed, enim quae, excepturi
+                corrupti distinctio accusantium animi totam sunt deserunt modi qui quibusdam ipsam ea sapiente minima
+                voluptas. Fugiat nostrum dicta eius incidunt hic cupiditate placeat iste vero explicabo quod.</p>
+            </div>
+
+
+            <div class="carousel__text">
+              <p class="carousel__title">text3</p>
+              <h2 class="carousel__company-name">Text3</h2>
+              <p class="carousel__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis
+                velit delectus? Nesciunt, maxime? Eveniet voluptatum, quisquam minus deleniti sed, enim quae, excepturi
+                corrupti distinctio accusantium animi totam sunt deserunt modi qui quibusdam ipsam ea sapiente minima
+                voluptas. Fugiat nostrum dicta eius incidunt hic cupiditate placeat iste vero explicabo quod.</p>
+            </div>
+
+            <div class="carousel__text">
+              <p class="carousel__title">text4</p>
+              <h2 class="carousel__company-name">Text4</h2>
+              <p class="carousel__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis
+                velit delectus? Nesciunt, maxime? Eveniet voluptatum, quisquam minus deleniti sed, enim quae, excepturi
+                corrupti distinctio accusantium animi totam sunt deserunt modi qui quibusdam ipsam ea sapiente minima
+                voluptas. Fugiat nostrum dicta eius incidunt hic cupiditate placeat iste vero explicabo quod.</p>
+            </div>
+
+            <div class="carousel__btns">
               <button class="carousel__btn-prev"><img src="./img/button-prev.svg" alt=""></button>
               <button class="carousel__btn-next"><img src="./img/button-next.svg" alt=""></button>
             </div>
           </div>
+
+          <div class="carousel__dots">
+            <div class="carousel__dot"></div>
+            <div class="carousel__dot"></div>
+            <div class="carousel__dot"></div>
+            <div class="carousel__dot"></div>
+          </div>
+
         </div>
+
         <p class="portfolio__description">Для ознакомления с полным списком проектов, вы можете скачать презентацию со
           всеми нашими кейсами</p>
 
