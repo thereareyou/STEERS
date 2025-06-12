@@ -19,13 +19,6 @@ const nextBtn = document.querySelector(".carousel__btn-next");
 
 let activeSlideIndex = 0;
 
-const setActiveItem = (items, index) => {
-  items.forEach((item) => item.classList.remove("active"));
-  setTimeout(() => {
-    items[index].classList.add("active");
-  }, 20); // минимальная задержка для CSS transition
-};
-
 const getInitSlederValue = () => {
   slides[activeSlideIndex].classList.add("active");
   dots[activeSlideIndex].classList.add("active");
