@@ -1,257 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>STEERS</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>STEERS</title>
-</head>
+  <body>
+    <!-- heder start -->
 
-<body>
+    <header class="header" id="header-section">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__logo">
+            <a href="./index.html">
+              <div class="logo__text">
+                <span>STEERS</span>
+                <span style="font-size: 15px; font-weight: 400"
+                  >development</span
+                >
+              </div>
+              <img src="./img/logo.svg" alt="" />
+            </a>
+          </div>
 
-  <!-- heder start -->
+          <nav class="header__nav">
+            <ul class="menu">
+              <li class="menu__list"><a href="#about-section">О нас</a></li>
+              <li class="menu__list">
+                <a href="#portfolio-section">Портфолио</a>
+              </li>
+              <li class="menu__list">
+                <a href="#products-section">Продукты</a>
+              </li>
+              <li class="menu__list"><a href="#">Технологии</a></li>
+              <li class="menu__list"><a href="#">Услуги</a></li>
+              <li class="menu__list"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
 
-  <header class="header" id="header-section">
-    <div class="container">
-      <div class="header__content">
-        <div class="header__logo">
-          <a href="./index.html">
-            <div class="logo__text">
-              <span>STEERS</span>
-              <span style="font-size: 15px; font-weight: 400;">development</span>
-            </div>
-            <img src="./img/logo.svg" alt="">
-          </a>
-        </div>
-
-        <nav class="header__nav">
-          <ul class="menu">
-            <li class="menu__list"><a href="#about-section">О нас</a></li>
-            <li class="menu__list"><a href="#portfolio-section">Портфолио</a></li>
-            <li class="menu__list"><a href="#">Контакты</a></li>
-            <li class="menu__list"><a href="#">Технологии</a></li>
-            <li class="menu__list"><a href="#">Услуги</a></li>
-            <li class="menu__list"><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
-
-        <button class="btn header__btn">Связаться с нами</button>
-      </div>
-
-
-    </div>
-  </header>
-
-  <!-- heder end -->
-
-  <!-- intro start -->
-  <section class="intro">
-    <div class="container">
-      <div class="intro__content">
-        <h1 class="intro__title">Технологии, которые работают на ваш успех
-          Ваш бизнес — наш самый важный алгоритм</h1>
-        <div class="arrow">
-          <a href="#about-section">
-            <img src="./img/arrow.png" alt="">
-          </a>
+          <button class="btn header__btn">Связаться с нами</button>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- intro end -->
+    <!-- heder end -->
 
-  <!-- about start -->
-
-  <section class="about" id="about-section">
-    <div class="container">
-      <about class="about__content">
-
-        <h3 class="about__title">О нас</h3>
-
-        <div class="about__info">
-
-          <div class="info__content">
-            <h2 class="info__title">Автоматизация рутины</h2>
-            <div class="info__img">
-              <img src="./img/automation.svg" alt="automation">
-            </div>
-            <div class="info__description">Перенесем ваши бизнес-процессы в цифру: меньше ошибок — меньше затраченных
-              средств, вплоть до 80%
-            </div>
-          </div>
-
-          <div class="info__content">
-            <h2 class="info__title">Опыт с региональными проектами</h2>
-            <div class="info__img">
-              <img src="./img/smile.svg" alt="smile">
-            </div>
-            <div class="info__description">Нам доверяют сделать лучше целые регионы</div>
+    <!-- intro start -->
+    <section class="intro">
+      <div class="container">
+        <div class="intro__content">
+          <h1 class="intro__title">
+            Технологии, которые работают на ваш успех Ваш бизнес — наш самый
+            важный алгоритм
+          </h1>
+          <div class="arrow">
+            <a href="#about-section">
+              <img src="./img/arrow.svg" alt="" />
+            </a>
           </div>
         </div>
-
-        <h1>
-          Почему выбирают нас?
-        </h1>
-
-        <div class="about__info">
-          <div class="info__content">
-            <h2 class="info__title">Гарантия безопасности</h2>
-            <div class="info__img">
-              <img src="./img/shield.svg" alt="shield">
-            </div>
-            <div class="info__description">Соответствуем 152-ФЗ «О персональных данных» — все серверы расположены в
-              России, шифруем информацию по стандартам, одобренным в РФ
-            </div>
-          </div>
-
-          <div class="info__content">
-            <h2 class="info__title">Делаем сложное — простым</h2>
-            <div class="info__img">
-              <img src="./img/hands.svg" alt="hands">
-            </div>
-            <div class="info__description">Даже если вам сложно описать вашу идею, опытные аналитики помогут вам,
-              консультация бесплатна
-            </div>
-          </div>
-        </div>
-
-        <div class="arrow">
-          <a href="#portfolio-section">
-            <img src="./img/arrow.png" alt="">
-          </a>
-        </div>
-
-      </about>
-    </div>
-  </section>
-  <!-- about end -->
-
-  <!-- portfolio start -->
-
-  <section class="portfolio" id="portfolio-section">
-    <div class="container">
-      <div class="portfolio__content">
-        <h3 class="portfolio_title">Портфолио</h3>
-        <h1>Технологии в действии: кейсы, которые вдохновляют</h1>
-
-
-        <div class="portfolio__carousel">
-
-          <div class="carousel__img">
-            <img src="./img/image1.png" alt="">
-          </div>
-
-          <div class="carousel__img">
-            <img src="./img/image2.png" alt="">
-          </div>
-
-          <div class="carousel__img">
-            <img src="./img/image3.png" alt="">
-          </div>
-
-          <div class="carousel__img">
-            <img src="./img/image4.png" alt="">
-          </div>
-
-
-          <div class="carousel__content">
-            <div class="carousel__text">
-              <p class="carousel__title">разработка мобильного приложения</p>
-              <h2 class="carousel__company-name">СКС Ломбард</h2>
-              <p class="carousel__description">СКС Ломбард - Региональная сеть ломбардов «СКС Ломбард». Мобильное
-                приложение
-                Группы компаний СКС
-                предоставляет клиентам возможность оперативно узнавать текущую задолженность, оплачивать договоры и
-                уточнять
-                сроки займов. Удобство использования и доступность информации сделают взаимодействие с финансовыми
-                услугами
-                более эффективным.</p>
-            </div>
-
-            <div class="carousel__text">
-              <p class="carousel__title">text2</p>
-              <h2 class="carousel__company-name">Text2</h2>
-              <p class="carousel__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis
-                velit delectus? Nesciunt, maxime? Eveniet voluptatum, quisquam minus deleniti sed, enim quae, excepturi
-                corrupti distinctio accusantium animi totam sunt deserunt modi qui quibusdam ipsam ea sapiente minima
-                voluptas. Fugiat nostrum dicta eius incidunt hic cupiditate placeat iste vero explicabo quod.</p>
-            </div>
-
-
-            <div class="carousel__text">
-              <p class="carousel__title">text3</p>
-              <h2 class="carousel__company-name">Text3</h2>
-              <p class="carousel__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis
-                velit delectus? Nesciunt, maxime? Eveniet voluptatum, quisquam minus deleniti sed, enim quae, excepturi
-                corrupti distinctio accusantium animi totam sunt deserunt modi qui quibusdam ipsam ea sapiente minima
-                voluptas. Fugiat nostrum dicta eius incidunt hic cupiditate placeat iste vero explicabo quod.</p>
-            </div>
-
-            <div class="carousel__text">
-              <p class="carousel__title">text4</p>
-              <h2 class="carousel__company-name">Text4</h2>
-              <p class="carousel__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nobis
-                velit delectus? Nesciunt, maxime? Eveniet voluptatum, quisquam minus deleniti sed, enim quae, excepturi
-                corrupti distinctio accusantium animi totam sunt deserunt modi qui quibusdam ipsam ea sapiente minima
-                voluptas. Fugiat nostrum dicta eius incidunt hic cupiditate placeat iste vero explicabo quod.</p>
-            </div>
-
-            <div class="carousel__btns">
-              <button class="carousel__btn-prev"><img src="./img/button-prev.svg" alt=""></button>
-              <button class="carousel__btn-next"><img src="./img/button-next.svg" alt=""></button>
-            </div>
-          </div>
-
-          <div class="carousel__dots">
-            <div class="carousel__dot"></div>
-            <div class="carousel__dot"></div>
-            <div class="carousel__dot"></div>
-            <div class="carousel__dot"></div>
-          </div>
-
-        </div>
-
-        <p class="portfolio__description">Для ознакомления с полным списком проектов, вы можете скачать презентацию со
-          всеми нашими кейсами</p>
-
-        <div class="portfolio__download">
-          <button class="portfolio__btn btn">Скачать</button>
-        </div>
-
-        <div class="portfolio__letters">
-          <p class="portfolio__description">Благодарственные письма</p>
-          <div class="letters__slider-wrapper">
-            <div class="slider">
-              <img src="./img/letter-image1.png" alt="" class="" id="slide1">
-              <img src="./img/letter-image1.png" alt="" class="" id="slide2">
-              <img src="./img/letter-image1.png" alt="" class="" id="slide3">
-              <img src="./img/letter-image1.png" alt="" class="" id="slide4">
-            </div>
-
-            <div class="slider-nav">
-              <a href="#slide1"></a>
-              <a href="#slide2"></a>
-              <a href="#slide3"></a>
-              <a href="#slide4"></a>
-            </div>
-          </div>        
-        </div>
-
       </div>
-    </div>
+    </section>
 
-  </section>
+    <!-- intro end -->
 
-  <!-- portfolio end -->
+    <!-- about start -->
 
+    <section class="about" id="about-section">
+      <div class="container">
+        <about class="about__content">
+          <h3 class="about__title">О нас</h3>
 
+          <div class="about__info">
+            <div class="info__content">
+              <h2 class="info__title">Автоматизация рутины</h2>
+              <div class="info__img">
+                <img src="./img/automation.svg" alt="automation" />
+              </div>
+              <div class="info__description">
+                Перенесем ваши бизнес-процессы в цифру: меньше ошибок — меньше
+                затраченных средств, вплоть до 80%
+              </div>
+            </div>
 
+            <div class="info__content">
+              <h2 class="info__title">Опыт с региональными проектами</h2>
+              <div class="info__img">
+                <img src="./img/face.svg" alt="smile" />
+              </div>
+              <div class="info__description">
+                Нам доверяют сделать лучше целые регионы
+              </div>
+            </div>
+          </div>
 
-  <script type="module" src="./js/main.js"></script>
+          <h1>Почему выбирают нас?</h1>
 
-</body>
+          <div class="about__info">
+            <div class="info__content">
+              <h2 class="info__title">Гарантия безопасности</h2>
+              <div class="info__img">
+                <img src="./img/shield.svg" alt="shield" />
+              </div>
+              <div class="info__description">
+                Соответствуем 152-ФЗ «О персональных данных» — все серверы
+                расположены в России, шифруем информацию по стандартам,
+                одобренным в РФ
+              </div>
+            </div>
 
+            <div class="info__content">
+              <h2 class="info__title">Делаем сложное — простым</h2>
+              <div class="info__img">
+                <img src="./img/hands.svg" alt="hands" />
+              </div>
+              <div class="info__description">
+                Даже если вам сложно описать вашу идею, опытные аналитики
+                помогут вам, консультация бесплатна
+              </div>
+            </div>
+          </div>
+
+          <div class="arrow">
+            <a href="#portfolio-section">
+              <img src="./img/arrow.svg" alt="" />
+            </a>
+          </div>
+        </about>
+      </div>
+    </section>
+    <!-- about end -->
+
+    <!-- portfolio start -->
+
+    <section class="portfolio" id="portfolio-section">
+      <div class="container">
+        <div class="portfolio__content">
+          <h3 class="portfolio_title">Портфолио</h3>
+          <h1>Технологии в действии: кейсы, которые вдохновляют</h1>
+
+          <div class="portfolio__carousel">
+            <div class="carousel__img">
+              <img src="./img/image1.png" alt="" />
+            </div>
+
+            <div class="carousel__img">
+              <img src="./img/image2.png" alt="" />
+            </div>
+
+            <div class="carousel__img">
+              <img src="./img/image3.png" alt="" />
+            </div>
+
+            <div class="carousel__img">
+              <img src="./img/image4.png" alt="" />
+            </div>
+
+            <div class="carousel__content">
+              <div class="carousel__text">
+                <p class="carousel__title">разработка мобильного приложения</p>
+                <h2 class="carousel__company-name">СКС Ломбард</h2>
+                <p class="carousel__description">
+                  СКС Ломбард - Региональная сеть ломбардов «СКС Ломбард».
+                  Мобильное приложение Группы компаний СКС предоставляет
+                  клиентам возможность оперативно узнавать текущую
+                  задолженность, оплачивать договоры и уточнять сроки займов.
+                  Удобство использования и доступность информации сделают
+                  взаимодействие с финансовыми услугами более эффективным.
+                </p>
+              </div>
+
+              <div class="carousel__text">
+                <p class="carousel__title">text2</p>
+                <h2 class="carousel__company-name">Text2</h2>
+                <p class="carousel__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere nobis velit delectus? Nesciunt, maxime? Eveniet
+                  voluptatum, quisquam minus deleniti sed, enim quae, excepturi
+                  corrupti distinctio accusantium animi totam sunt deserunt modi
+                  qui quibusdam ipsam ea sapiente minima voluptas. Fugiat
+                  nostrum dicta eius incidunt hic cupiditate placeat iste vero
+                  explicabo quod.
+                </p>
+              </div>
+
+              <div class="carousel__text">
+                <p class="carousel__title">text3</p>
+                <h2 class="carousel__company-name">Text3</h2>
+                <p class="carousel__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere nobis velit delectus? Nesciunt, maxime? Eveniet
+                  voluptatum, quisquam minus deleniti sed, enim quae, excepturi
+                  corrupti distinctio accusantium animi totam sunt deserunt modi
+                  qui quibusdam ipsam ea sapiente minima voluptas. Fugiat
+                  nostrum dicta eius incidunt hic cupiditate placeat iste vero
+                  explicabo quod.
+                </p>
+              </div>
+
+              <div class="carousel__text">
+                <p class="carousel__title">text4</p>
+                <h2 class="carousel__company-name">Text4</h2>
+                <p class="carousel__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere nobis velit delectus? Nesciunt, maxime? Eveniet
+                  voluptatum, quisquam minus deleniti sed, enim quae, excepturi
+                  corrupti distinctio accusantium animi totam sunt deserunt modi
+                  qui quibusdam ipsam ea sapiente minima voluptas. Fugiat
+                  nostrum dicta eius incidunt hic cupiditate placeat iste vero
+                  explicabo quod.
+                </p>
+              </div>
+
+              <div class="carousel__btns">
+                <button class="carousel__btn-prev">
+                  <img src="./img/button-prev.svg" alt="" />
+                </button>
+                <button class="carousel__btn-next">
+                  <img src="./img/button-next.svg" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="carousel__dots">
+              <div class="carousel__dot"></div>
+              <div class="carousel__dot"></div>
+              <div class="carousel__dot"></div>
+              <div class="carousel__dot"></div>
+            </div>
+          </div>
+
+          <p class="portfolio__description">
+            Для ознакомления с полным списком проектов, вы можете скачать
+            презентацию со всеми нашими кейсами
+          </p>
+
+          <div class="portfolio__download">
+            <button class="portfolio__btn btn">Скачать</button>
+          </div>
+
+          <div class="portfolio__letters">
+            <p class="portfolio__description">Благодарственные письма</p>
+            <div class="letters__slider-wrapper">
+              <div class="slider">
+                <img
+                  src="./img/letter-image1.png"
+                  alt=""
+                  class=""
+                  id="slide1"
+                />
+                <img
+                  src="./img/letter-image1.png"
+                  alt=""
+                  class=""
+                  id="slide2"
+                />
+                <img
+                  src="./img/letter-image1.png"
+                  alt=""
+                  class=""
+                  id="slide3"
+                />
+                <img
+                  src="./img/letter-image1.png"
+                  alt=""
+                  class=""
+                  id="slide4"
+                />
+              </div>
+
+              <div class="carousel__dots">
+                <div class="carousel__dot active"></div>
+                <div class="carousel__dot"></div>
+                <div class="carousel__dot"></div>
+                <div class="carousel__dot"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="arrow">
+            <a href="#products-section">
+              <img src="./img/arrow.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio end -->
+
+    <!-- products start  -->
+
+    <section class="products" id="products-section">
+      <div class="container">
+        <div class="products__content">
+          <h3>Продукты</h3>
+
+          <h1 class="products__title">Гибкие решения для вашего бизнеса</h1>
+
+          <div class="products__info">
+            <div class="info__manager info__top-block">
+              <h2>ИИ-менеджер</h2>
+              <div class="info__img">
+                <img src="./img/head.svg" alt="" />
+              </div>
+              <p class="info__text">
+                Для максимально быстрого ответа на сообщения клиентов
+              </p>
+
+              <p class="price">25 000₽<span>/мес</span></p>
+            </div>
+
+            <div class="info__manager-adv info__bottom-block">
+              <h2 class="bottom-block__title">Преимущества</h2>
+
+              <ul class="advantages">
+                <li class="advantages__list">
+                  Интеграция с CRM, email-сервисами, телефонией и мессенджерами
+                  для автоматической обработки заявок, уведомлений и напоминаний
+                </li>
+                <li class="advantages__list">
+                  Снижение человеческих ошибок и высвобождение времени
+                  сотрудников для стратегических задач
+                </li>
+              </ul>
+              <div class="btn bottom-block__btn">
+                <button class=" ">Оставить заявку</button>
+                <img src="./img/arrow-left-white.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="info__storage info__top-block">
+              <h2>Прогнозирование складских остатков</h2>
+              <div class="info__img">
+                <img src="./img/house.svg" alt="" />
+              </div>
+              <p class="info__text">Управление складами с помощью ИИ</p>
+
+              <p class="price"><span>От </span>50 000₽</p>
+            </div>
+
+            <div class="info__storage-adv info__bottom-block">
+              <h2 class="bottom-block__title">Преимущества</h2>
+
+              <ul class="advantages">
+                <li class="advantages__list">
+                  Снижение излишков: ИИ предсказывает спрос, минимизируя риск
+                  затоваривания, что сокращает затраты на хранение и потери от
+                  устаревания товаров
+                </li>
+                <li class="advantages__list">
+                  Прогнозирование пиков спроса предотвращает дефицит и
+                  минимизируя недовольство клиентов
+                </li>
+              </ul>
+
+              <div class="btn bottom-block__btn">
+                <button class=" ">Оставить заявку</button>
+                <img src="./img/arrow-left-red.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="arrow">
+        <a href="#">
+          <img src="./img/arrow.svg" alt="" />
+        </a>
+      </div>
+    </section>
+
+    <!-- products end  -->
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
 </html>

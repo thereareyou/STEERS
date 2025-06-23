@@ -397,7 +397,7 @@ h3 {
   font-weight: 400;
   width: 935px;
   margin-top: 50px;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
 }
 
 .portfolio__download {
@@ -442,3 +442,148 @@ h3 {
 }
 
 /* portfolio end */
+
+/* products start */
+
+.products__content h3 {
+  width: 133px;
+}
+
+.products__title {
+  width: 633px;
+}
+
+.products__info {
+  height: 810px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.products__info h2 {
+  font-size: 45px;
+}
+
+.info__top-block {
+  width: 585px;
+  height: 425px;
+  padding: 24px 24px 44px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info__manager {
+  background: url(../img/products-bg-white.svg);
+}
+
+.info__text {
+  width: 410px;
+  font-size: 22px;
+  opacity: 50%;
+  margin-top: 15px;
+  margin-bottom: 150px;
+}
+
+.price {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.price span {
+  font-size: 22px;
+  opacity: 50%;
+  font-weight: 400;
+}
+
+.info__bottom-block {
+  width: 585px;
+  height: 525px;
+  margin-top: -140px;
+  padding: 56px 32px 31px 44px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info__manager-adv {
+  background: url(../img/products-bg-white2.svg);
+}
+
+.bottom-block__title {
+  font-size: 30px !important;
+  margin-left: auto;
+}
+
+.advantages {
+  width: 521px;
+  font-size: 25px;
+  margin-top: 88px;
+  margin-bottom: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.advantages__list {
+  list-style-type: disc;
+}
+
+.advantages__list::marker{
+  color: #ae0620;
+  font-size: 30px;
+}
+
+.bottom-block__btn {
+  margin: 0 auto;
+  width: 228px;
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.bottom-block__btn button {
+  font-weight: 600;
+}
+
+.info__storage {
+  background: url(../img/products-bg-red.svg);
+  color: #fff;
+}
+
+.info__storage h2 {
+  width: 450px;
+}
+
+.info__storage .info__text {
+  width: 345px;
+  opacity: 90%;
+  margin-bottom: 115px;
+}
+
+.info__storage .info__img {
+  background: #fff;
+}
+
+.info__storage .price span {
+  opacity: 90%;
+}
+
+.info__storage-adv {
+  background: url(../img/products-bg-red2.svg);
+  color: #FFFAFA;
+}
+
+.info__storage-adv .advantages .advantages__list::marker{
+  color: #FFFAFA;
+}
+
+.info__storage-adv .bottom-block__btn{
+  background: #FFFAFA;
+  color: #050301;
+}
+
+/* products end */
