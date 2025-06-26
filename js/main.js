@@ -88,3 +88,22 @@ dots.forEach((dot, index) => {
   });
 });
 //carousel end
+
+// slider start
+const letterSlider = document.querySelector(".slider");
+
+letterSlider.addEventListener(
+  "wheel",
+  (e) => {
+    if (e.deltaY !== 0) {
+      e.preventDefault();
+      letterSlider.scrollBy({
+        left: e.deltaY < 0 ? -100 : 100,
+        behavior: "smooth",
+      });
+    }
+  },
+  { passive: false }
+);
+
+//slider end
