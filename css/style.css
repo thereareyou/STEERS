@@ -603,3 +603,52 @@ h3 {
 }
 
 /* products end */
+
+/* technologies start */
+
+.technologies__content h3 {
+  width: 150px;
+}
+
+.technologies__content h1 {
+  width: 693px;
+  margin-bottom: 50px;
+}
+
+.technologies__wrapper {
+  width: 865px;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list {
+  font-size: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list__title {
+  color: #ae0620;
+  /* width: 130px; */
+}
+
+.list__items {
+  width: 560px;
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.list__items li {
+  list-style: disc;
+  width: 260px;
+}
+
+.list__items-big{
+  height: 195px;
+}
+/* technologies end */
