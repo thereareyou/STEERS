@@ -631,7 +631,6 @@ h3 {
 
 .list__title {
   color: #ae0620;
-  /* width: 130px; */
 }
 
 .list__items {
@@ -652,3 +651,61 @@ h3 {
   height: 195px;
 }
 /* technologies end */
+
+/* services start */
+
+.services__content h3{
+  width: 102px;
+}
+
+.services__content h1{
+  width: 965px;
+  margin-bottom: 52px;
+}
+
+.services__wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.wrapper{
+  width: 286px;
+  height: 209px;
+  border: 3px solid #ae0620;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.wrapper__title{
+  width: 155px;
+  height: 76px;
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+
+.wrapper__number{
+  text-align: right;
+  color: #ae0620;
+}
+
+.wrapper__img{
+  margin-bottom: 30px;
+}
+
+.services__btn{
+  width: 296px;
+  height: 67px;
+  font-weight: 700;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* services end */
