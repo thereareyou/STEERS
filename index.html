@@ -35,9 +35,13 @@
               <li class="menu__list">
                 <a href="#products-section">Продукты</a>
               </li>
-              <li class="menu__list"><a href="#technologies-section">Технологии</a></li>
+              <li class="menu__list">
+                <a href="#technologies-section">Технологии</a>
+              </li>
               <li class="menu__list"><a href="#services-section">Услуги</a></li>
-              <li class="menu__list"><a href="#">Контакты</a></li>
+              <li class="menu__list">
+                <a href="#contacts-section">Контакты</a>
+              </li>
             </ul>
           </nav>
 
@@ -475,16 +479,80 @@
           </div>
 
           <div class="arrow">
-            <a href="#">
+            <a href="#contacts-section">
               <img src="./img/arrow.svg" alt="" />
             </a>
           </div>
-
         </div>
       </div>
     </section>
 
     <!-- services end -->
+
+    <!-- contacts start -->
+
+    <section class="contacts" id="contacts-section">
+      <div class="container">
+        <div class="contacts__content">
+          <h3>Контакты</h3>
+
+          <div class="contacts__wrapper">
+            <div class="contacts__our-contacts">
+              <h1>Наши контакты</h1>
+              <p class="our-contacts__opacity">Телефон</p>
+              <p class="our-contacts__red">+7 (917) 807-08-07</p>
+              <p class="our-contacts__opacity">E-mail</p>
+              <p class="our-contacts__red">development@steers.ru</p>
+              <p class="our-contacts__opacity">Режим работы</p>
+              <p class="our-contacts__red">9:00-19:00</p>
+              <a href="#" class="our-contacts_details">Реквизиты</a>
+            </div>
+
+            <div class="contacts__feedback">
+              <h1>Обратная связь</h1>
+
+              <form action="#" method="post">
+                <div class="form-group">
+                  <input type="text" placeholder="Ваше имя" id="name" name="name" required />
+                </div>
+
+                <div class="form-group">
+                  <input type="tel" placeholder="Ваш телефон" id="phone" name="phone" required />
+                </div>
+
+                <div class="form-group">
+                  <textarea placeholder="Ваше сообщение" id="message" name="message" required></textarea>
+                </div>
+
+                <div class="checkbox-group">
+                  <input type="checkbox" id="consent" name="consent" required />
+                  <label for="consent"
+                    >Я даю согласие на обработку моих персональных данных, а
+                    также подтверждаю, что ознакомлен с Политикой
+                    конфиденциальности
+                  </label>
+                </div>
+
+                <div class="captcha">
+                  <input
+                    type="checkbox"
+                    id="not-robot"
+                    name="not_robot"
+                    required
+                  />
+                  <label for="not-robot">Я не робот</label>
+                  <p>Нажмите, чтобы продолжить</p>
+                </div>
+
+                <button type="submit" class="submit-btn">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contacts end -->
 
     <script type="module" src="./js/main.js"></script>
   </body>

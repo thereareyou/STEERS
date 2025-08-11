@@ -634,7 +634,7 @@ h3 {
 }
 
 .list__items {
-  width: 560px;
+  width: 470px;
   height: 85px;
   display: flex;
   flex-direction: column;
@@ -647,29 +647,30 @@ h3 {
   width: 260px;
 }
 
-.list__items-big{
+.list__items-big {
   height: 195px;
 }
 /* technologies end */
 
 /* services start */
 
-.services__content h3{
+.services__content h3 {
   width: 102px;
 }
 
-.services__content h1{
+.services__content h1 {
   width: 965px;
   margin-bottom: 52px;
+  font-size: 65px;
 }
 
-.services__wrapper{
+.services__wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 36px;
 }
 
-.wrapper{
+.wrapper {
   width: 286px;
   height: 209px;
   border: 3px solid #ae0620;
@@ -682,23 +683,23 @@ h3 {
   flex-wrap: wrap;
 }
 
-.wrapper__title{
+.wrapper__title {
   width: 155px;
   height: 76px;
   margin-bottom: 32px;
   font-weight: 500;
 }
 
-.wrapper__number{
+.wrapper__number {
   text-align: right;
   color: #ae0620;
 }
 
-.wrapper__img{
+.wrapper__img {
   margin-bottom: 30px;
 }
 
-.services__btn{
+.services__btn {
   width: 296px;
   height: 67px;
   font-weight: 700;
@@ -709,3 +710,64 @@ h3 {
 }
 
 /* services end */
+
+/* contacts start */
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__content h3 {
+  width: 131px;
+}
+
+.contacts__our-contacts h1 {
+  font-weight: 500;
+}
+
+.our-contacts__opacity {
+  font-size: 30px;
+  font-weight: 400;
+  color: #050301;
+  opacity: 50%;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.our-contacts__red {
+  font-size: 40px;
+  color: #ae0620;
+}
+
+.our-contacts_details{
+  font-size: 30px;
+  margin-top: 150px;
+  color: #ae0620 !important;
+  text-decoration-line: underline !important;
+}
+
+.contacts__feedback {
+  width: 595px;
+  height: 650px;
+  border: 3px solid #ae0620;
+  border-radius: 30px;
+  padding: 30px 65px ;
+}
+
+.contacts__feedback h1 {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts__feedback form {
+  margin: 0 auto;
+}
+
+.form-group{
+  width: 453px;
+  display: flex;
+  justify-content: center;
+}
+/* contacts end */
