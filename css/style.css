@@ -900,9 +900,9 @@ h3 {
   justify-content: space-between;
 }
 
-.logo__text span{
+.logo__text-footer span{
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .logo a img{
