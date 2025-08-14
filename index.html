@@ -613,6 +613,63 @@
 
   <!-- footer end -->
 
+  <!-- popup start -->
+
+  <div class="modal">
+    <div class="modal__content">
+      
+      <button class="modal__close-btn">
+        <img src="./img/close-btn.svg" alt="">
+      </button>
+
+      <h2 class="mоdal__title">Свяжитесь с нами</h2>
+
+      <form action="#" method="post">
+        <div class="form-group">
+          <img src="./img/contacts/human.svg" alt="">
+          <input type="text" maxlength="25" placeholder="Ваше имя" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <img src="./img/contacts/phone.svg" alt="">
+          <input type="tel" maxlength="12" placeholder="Ваш телефон" id="phone" name="phone" required />
+        </div>
+
+        <div class="form-group">
+          <img src="./img/contacts/message.svg" alt="">
+          <input maxlength="100" placeholder="Ваше сообщение" id="message" name="message" required></input>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="consent" name="consent" required />
+          <p>Я даю согласие на <a href="#">обработку моих персональных данных</a>, а
+            также подтверждаю, что ознакомлен с <a href="#">Политикой конфиденциальности</a></p>
+        </div>
+
+        <div class="checkbox-group">
+          <div class="g-recaptcha" data-sitekey="6Ld3-KMrAAAAAJZgC-SebGv15Z34n-idAjQcPYIW"></div>
+        </div>
+
+
+        <div class="submit-group">
+          <label class="attachment">
+            <div class="attachment-img btn">
+              <img src="./img/contacts/attachment.svg" alt="">
+            </div>
+            <input type="file" name="file">
+          </label>
+
+          <button type="submit" class="submit-btn btn">Отправить</button>
+        </div>
+
+      </form>
+
+      <p>Или обратитесь по номеру: <span>+7 (917) 807-08-07</span></p>
+    </div>
+  </div>
+
+  <!-- popup end -->
+
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script type="module" src="./js/main.js"></script>
 </body>

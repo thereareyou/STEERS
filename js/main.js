@@ -107,3 +107,19 @@ letterSlider.addEventListener(
 );
 
 //slider end
+
+// popup start
+
+const contactBtn = document.querySelector(".header__btn");
+const popUpWindow = document.querySelector(".modal");
+const popUpClosebtn = document.querySelector(".modal__close-btn");
+
+contactBtn.addEventListener("click", () => {
+  popUpWindow.classList.toggle("active");
+});
+
+popUpClosebtn.addEventListener("click", () => {
+  popUpWindow.classList.remove("active");
+});
+
+// popup end
