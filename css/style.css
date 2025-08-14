@@ -681,6 +681,7 @@ h3 {
   align-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
+  background: #fffafa;
 }
 
 .wrapper__title {
@@ -742,9 +743,9 @@ h3 {
 
 .our-contacts_details {
   font-size: 30px;
-  margin-top: 150px;
+  margin-top: 134px;
   color: #ae0620 !important;
-  text-decoration-line: underline !important;
+  border-bottom: 2px solid #ae0620;
 }
 
 .contacts__feedback {
@@ -792,7 +793,7 @@ h3 {
 
 .checkbox-group {
   display: flex;
-  margin: 30px 0px 30px;
+  margin: 25px 0px 25px;
 }
 
 .checkbox-group p {
@@ -870,3 +871,114 @@ h3 {
   cursor: pointer;
 }
 /* contacts end */
+
+/* footer start */
+
+.footer {
+  background: #fffafa;
+  height: 435px;
+  margin-top: 50px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid #ae0620;
+  height: 348px;
+  padding-top: 50px;
+  padding-bottom: 43px;
+}
+
+.logo {
+  width: 210px;
+}
+
+.logo a{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo__text span{
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.logo a img{
+  width: 47px;
+  height: 96px;
+}
+
+.logo__opacity{
+  font-size: 18px;
+  opacity: 50%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.logo__img{
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__company {
+  padding-top: 24px;
+  border-left: 3px solid #ae0620;
+  border-right: 3px solid #ae0620;
+  width: 480px;
+}
+
+.company__title {
+  font-size: 30px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.company__links {
+  width: 268px;
+  height: 100px;
+  font-size: 20px;
+  opacity: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__contacts {
+  text-align: right;
+  padding-top: 24px;
+}
+
+.contacts__title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 19px;
+}
+
+.contacts__opacity {
+  opacity: 50%;
+  font-size: 18px;
+  margin-top: 11px;
+}
+
+.contacts__red {
+  font-size: 20px;
+  color: #ae0620;
+}
+
+.bottom-section{
+  font-size: 18px;
+  margin-top: 33px;
+  opacity: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+/* footer end */
