@@ -112,6 +112,7 @@ letterSlider.addEventListener(
 
 const contactBtn = document.querySelector(".header__btn");
 const popUpWindow = document.querySelector(".modal");
+const popUpWindowContent = document.querySelector(".modal__content");
 const popUpClosebtn = document.querySelector(".modal__close-btn");
 
 contactBtn.addEventListener("click", () => {
@@ -120,6 +121,22 @@ contactBtn.addEventListener("click", () => {
 
 popUpClosebtn.addEventListener("click", () => {
   popUpWindow.classList.remove("active");
+});
+
+window.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    popUpWindow.classList.remove("active");
+  }
+});
+
+popUpWindowContent.addEventListener("click", (event) => {
+  event._isClickWithInWindow = true;
+  console.log(event._isClickWithInWindow);
+});
+
+popUpWindow.addEventListener("click", (event) => {
+  if (event._isClickWithInWindow) return;
+  event.currentTarget.classList.remove("active");
 });
 
 // popup end
