@@ -134,6 +134,14 @@ h3 {
   transition: 0.3s;
 }
 
+.bg-fixed-demo {
+  background-image: url("../img/bg.svg"), url("../img/bg-2.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 825px top 0, right 480px bottom -265px;
+  background-size: 1080px auto, 1080px auto;
+  background-attachment: fixed, fixed;
+}
+
 /* general end */
 
 /* header start */
@@ -187,28 +195,6 @@ h3 {
   width: 800px;
 
   text-align: left;
-}
-
-.intro::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 1080px;
-  height: 594px;
-  background: url("../img/bg.svg") no-repeat;
-  z-index: -1;
-}
-
-.intro::after {
-  content: "";
-  position: absolute;
-  top: 590px;
-  left: 150px;
-  width: 1080px;
-  height: 594px;
-  background: url("../img/bg-2.svg") no-repeat;
-  z-index: -1;
 }
 
 /* intro end */
@@ -1279,7 +1265,7 @@ h3 {
     width: 37px;
   }
 
-  .footer__company{
+  .footer__company {
     width: 390px;
   }
 
@@ -1306,5 +1292,22 @@ h3 {
   }
   .bottom-section {
     font-size: 15px;
+  }
+
+  .modal__content {
+    padding: 40px 35px 25px;
+    height: 700px;
+  }
+
+  .mоdal__title {
+    font-size: 40px;
+  }
+
+  .form-group input {
+    font-size: 19px;
+  }
+
+  .modal__content p {
+    font-size: 22px;
   }
 }
