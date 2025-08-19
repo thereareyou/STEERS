@@ -1058,6 +1058,11 @@ h3 {
     font-size: 55px;
   }
 
+  .bg-fixed-demo {
+    background-position: left 450px top 0, right 310px bottom -190px;
+    background-size: 850px auto, 850px auto;
+  }
+
   .container {
     width: 960px;
   }
