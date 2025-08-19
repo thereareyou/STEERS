@@ -131,7 +131,6 @@ window.addEventListener("keydown", (e) => {
 
 popUpWindowContent.addEventListener("click", (event) => {
   event._isClickWithInWindow = true;
-  console.log(event._isClickWithInWindow);
 });
 
 popUpWindow.addEventListener("click", (event) => {
