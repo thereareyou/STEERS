@@ -111,11 +111,16 @@ letterSlider.addEventListener(
 // popup start
 
 const contactBtn = document.querySelector(".header__btn");
+const contactBtnMobile = document.querySelector(".contact-btn");
 const popUpWindow = document.querySelector(".modal");
 const popUpWindowContent = document.querySelector(".modal__content");
 const popUpClosebtn = document.querySelector(".modal__close-btn");
 
 contactBtn.addEventListener("click", () => {
+  popUpWindow.classList.toggle("active");
+});
+
+contactBtnMobile.addEventListener("click", () => {
   popUpWindow.classList.toggle("active");
 });
 
