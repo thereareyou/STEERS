@@ -118,19 +118,23 @@ const popUpClosebtn = document.querySelector(".modal__close-btn");
 
 contactBtn.addEventListener("click", () => {
   popUpWindow.classList.toggle("active");
+  document.body.classList.add("no-scroll");
 });
 
 contactBtnMobile.addEventListener("click", () => {
   popUpWindow.classList.toggle("active");
+  document.body.classList.add("no-scroll");
 });
 
 popUpClosebtn.addEventListener("click", () => {
   popUpWindow.classList.remove("active");
+  document.body.classList.remove("no-scroll");
 });
 
 window.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     popUpWindow.classList.remove("active");
+    document.body.classList.remove("no-scroll");
   }
 });
 
@@ -141,6 +145,18 @@ popUpWindowContent.addEventListener("click", (event) => {
 popUpWindow.addEventListener("click", (event) => {
   if (event._isClickWithInWindow) return;
   event.currentTarget.classList.remove("active");
+  document.body.classList.remove("no-scroll");
 });
 
 // popup end
+
+// menu nav start
+
+const menuBtn = document.querySelector(".menu-btn");
+const navMenu = document.querySelector(".header__nav");
+
+menuBtn.addEventListener("click", () => {
+  navMenu.classList.add("active");
+});
+
+// menu nav end
