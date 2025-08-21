@@ -154,9 +154,16 @@ popUpWindow.addEventListener("click", (event) => {
 
 const menuBtn = document.querySelector(".menu-btn");
 const navMenu = document.querySelector(".header__nav");
+const menuCanceBtn = document.querySelector(".menu-cancel-btn");
 
 menuBtn.addEventListener("click", () => {
   navMenu.classList.add("active");
+  document.body.classList.add("no-scroll");
+});
+
+menuCanceBtn.addEventListener("click", () => {
+  navMenu.classList.remove("active");
+  document.body.classList.remove("no-scroll");
 });
 
 // menu nav end
