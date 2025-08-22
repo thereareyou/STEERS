@@ -162,11 +162,14 @@ popUpWindow.addEventListener("click", (event) => {
 const menuBtn = document.querySelector(".menu-btn");
 const mobileMenu = document.querySelector(".mobile-menu");
 const menuCancelBtn = document.querySelector(".menu-cancel-btn");
+const menuNav = document.querySelectorAll(".mobile-menu__list");
+
+console.log(menuNav);
 
 menuBtn.addEventListener("click", () => {
   mobileMenu.classList.add("active");
   header.classList.remove("sticky");
-  header.classList.add("heder-menu-fixed");
+  header.classList.add("header-menu-fixed");
   menuBtn.classList.add("disabled");
   menuCancelBtn.classList.add("active");
   document.body.classList.add("no-scroll");
@@ -174,7 +177,7 @@ menuBtn.addEventListener("click", () => {
 
 menuCancelBtn.addEventListener("click", () => {
   mobileMenu.classList.remove("active");
-  header.classList.remove("heder-menu-fixed");
+  header.classList.remove("header-menu-fixed");
 
   menuBtn.classList.remove("disabled");
   menuCancelBtn.classList.remove("active");
@@ -182,6 +185,17 @@ menuCancelBtn.addEventListener("click", () => {
     header.classList.add("sticky");
   }
   document.body.classList.remove("no-scroll");
+});
+
+menuNav.forEach((item) => {
+  item.addEventListener("click", () => {
+    console.log("Клик по:", item.textContent.trim());
+    mobileMenu.classList.remove("active");
+    document.body.classList.remove("no-scroll");
+    header.classList.remove("header-menu-fixed");
+    menuCancelBtn.classList.remove("active");
+    menuBtn.classList.remove("disabled");
+  });
 });
 
 // menu nav end
