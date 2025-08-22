@@ -1,7 +1,8 @@
 //header sticky start
+const header = document.querySelector(".header");
+
 window.addEventListener("scroll", function () {
-  const header = document.querySelector(".header");
-  if (window.scrollY > 90) {
+  if (window.scrollY > 90 && !mobileMenu.classList.contains("active")) {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
@@ -117,24 +118,28 @@ const popUpWindowContent = document.querySelector(".modal__content");
 const popUpClosebtn = document.querySelector(".modal__close-btn");
 
 contactBtn.addEventListener("click", () => {
-  popUpWindow.classList.toggle("active");
+  popUpWindow.classList.add("active");
   document.body.classList.add("no-scroll");
 });
 
 contactBtnMobile.addEventListener("click", () => {
-  popUpWindow.classList.toggle("active");
+  popUpWindow.classList.add("active");
   document.body.classList.add("no-scroll");
 });
 
 popUpClosebtn.addEventListener("click", () => {
   popUpWindow.classList.remove("active");
-  document.body.classList.remove("no-scroll");
+  if (!mobileMenu.classList.contains("active")) {
+    document.body.classList.remove("no-scroll");
+  }
 });
 
 window.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     popUpWindow.classList.remove("active");
-    document.body.classList.remove("no-scroll");
+    if (!mobileMenu.classList.contains("active")) {
+      document.body.classList.remove("no-scroll");
+    }
   }
 });
 
@@ -145,7 +150,9 @@ popUpWindowContent.addEventListener("click", (event) => {
 popUpWindow.addEventListener("click", (event) => {
   if (event._isClickWithInWindow) return;
   event.currentTarget.classList.remove("active");
-  document.body.classList.remove("no-scroll");
+  if (!mobileMenu.classList.contains("active")) {
+    document.body.classList.remove("no-scroll");
+  }
 });
 
 // popup end
@@ -153,16 +160,27 @@ popUpWindow.addEventListener("click", (event) => {
 // menu nav start
 
 const menuBtn = document.querySelector(".menu-btn");
-const navMenu = document.querySelector(".header__nav");
-const menuCanceBtn = document.querySelector(".menu-cancel-btn");
+const mobileMenu = document.querySelector(".mobile-menu");
+const menuCancelBtn = document.querySelector(".menu-cancel-btn");
 
 menuBtn.addEventListener("click", () => {
-  navMenu.classList.add("active");
+  mobileMenu.classList.add("active");
+  header.classList.remove("sticky");
+  header.classList.add("heder-menu-fixed");
+  menuBtn.classList.add("disabled");
+  menuCancelBtn.classList.add("active");
   document.body.classList.add("no-scroll");
 });
 
-menuCanceBtn.addEventListener("click", () => {
-  navMenu.classList.remove("active");
+menuCancelBtn.addEventListener("click", () => {
+  mobileMenu.classList.remove("active");
+  header.classList.remove("heder-menu-fixed");
+
+  menuBtn.classList.remove("disabled");
+  menuCancelBtn.classList.remove("active");
+  if (window.scrollY > 90) {
+    header.classList.add("sticky");
+  }
   document.body.classList.remove("no-scroll");
 });
 
