@@ -163,6 +163,7 @@ const menuBtn = document.querySelector(".menu-btn");
 const mobileMenu = document.querySelector(".mobile-menu");
 const menuCancelBtn = document.querySelector(".menu-cancel-btn");
 const menuNav = document.querySelectorAll(".mobile-menu__list");
+const headerPlaceholder = document.querySelector(".header-placeholder");
 
 console.log(menuNav);
 
@@ -173,6 +174,7 @@ menuBtn.addEventListener("click", () => {
   menuBtn.classList.add("disabled");
   menuCancelBtn.classList.add("active");
   document.body.classList.add("no-scroll");
+  headerPlaceholder.classList.add("active");
 });
 
 menuCancelBtn.addEventListener("click", () => {
@@ -181,6 +183,7 @@ menuCancelBtn.addEventListener("click", () => {
 
   menuBtn.classList.remove("disabled");
   menuCancelBtn.classList.remove("active");
+  headerPlaceholder.classList.remove("active");
   if (window.scrollY > 90) {
     header.classList.add("sticky");
   }
@@ -189,7 +192,6 @@ menuCancelBtn.addEventListener("click", () => {
 
 menuNav.forEach((item) => {
   item.addEventListener("click", () => {
-    console.log("Клик по:", item.textContent.trim());
     mobileMenu.classList.remove("active");
     document.body.classList.remove("no-scroll");
     header.classList.remove("header-menu-fixed");
