@@ -113,6 +113,7 @@ letterSlider.addEventListener(
 
 const contactBtn = document.querySelector(".header__btn");
 const contactBtnMobile = document.querySelector(".contact-btn");
+const menuContactBtn = document.querySelector(".menu-contact-btn");
 const popUpWindow = document.querySelector(".modal");
 const popUpWindowContent = document.querySelector(".modal__content");
 const popUpClosebtn = document.querySelector(".modal__close-btn");
@@ -123,6 +124,11 @@ contactBtn.addEventListener("click", () => {
 });
 
 contactBtnMobile.addEventListener("click", () => {
+  popUpWindow.classList.add("active");
+  document.body.classList.add("no-scroll");
+});
+
+menuContactBtn.addEventListener("click", () => {
   popUpWindow.classList.add("active");
   document.body.classList.add("no-scroll");
 });
@@ -180,7 +186,6 @@ menuBtn.addEventListener("click", () => {
 menuCancelBtn.addEventListener("click", () => {
   mobileMenu.classList.remove("active");
   header.classList.remove("header-menu-fixed");
-
   menuBtn.classList.remove("disabled");
   menuCancelBtn.classList.remove("active");
   headerPlaceholder.classList.remove("active");
@@ -190,14 +195,35 @@ menuCancelBtn.addEventListener("click", () => {
   document.body.classList.remove("no-scroll");
 });
 
-menuNav.forEach((item) => {
-  item.addEventListener("click", () => {
-    mobileMenu.classList.remove("active");
-    document.body.classList.remove("no-scroll");
-    header.classList.remove("header-menu-fixed");
-    menuCancelBtn.classList.remove("active");
-    menuBtn.classList.remove("disabled");
-  });
+menuNav.forEach((item, index) => {
+  if (!item.querySelector(".menu-contact-btn")) {
+    item.addEventListener("click", () => {
+      mobileMenu.classList.remove("active");
+      document.body.classList.remove("no-scroll");
+      header.classList.remove("header-menu-fixed");
+      menuCancelBtn.classList.remove("active");
+      menuBtn.classList.remove("disabled");
+      headerPlaceholder.classList.remove("active");
+    });
+  }
 });
 
 // menu nav end
+
+// section info slides start
+
+const infos = document.querySelectorAll(".about__info");
+
+let index = 0;
+
+infos[index].classList.add("active");
+
+setInterval(() => {
+  infos[index].classList.remove("active");
+
+  index = (index + 1) % infos.length;
+
+  infos[index].classList.add("active");
+}, 5000);
+
+// section info slides start
