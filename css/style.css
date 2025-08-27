@@ -1480,18 +1480,10 @@ h3 {
   }
 
   .about__info {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.6s ease, visibility 0.6s ease;
-
     flex-direction: column;
     margin: 0;
   }
+
 
   .info__content:nth-child(1) {
     margin-bottom: 30px;
@@ -1529,9 +1521,7 @@ h3 {
     display: none;
   }
 
-
-  
-  .carousel__img-mobile.active{
+  .carousel__img-mobile.active {
     display: block;
   }
 

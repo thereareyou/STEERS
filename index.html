@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    media="(max-width: 1024px)" />
   <title>STEERS</title>
 </head>
 
 <body class="bg-fixed-demo1">
-
 
   <!-- header start -->
 
@@ -129,53 +130,62 @@
 
         <h1 class="about__title-mobile">Почему мы?</h1>
 
-        <div class="about__info">
-          <div class="info__content">
-            <h2 class="info__title">Автоматизация рутины</h2>
-            <div class="info__img">
-              <img src="./img/automation.svg" alt="automation" />
-            </div>
-            <div class="info__description">
-              Перенесем ваши бизнес-процессы в цифру: меньше ошибок — меньше
-              затраченных средств, вплоть до 80%
-            </div>
-          </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
 
-          <div class="info__content">
-            <h2 class="info__title">Опыт с региональными проектами</h2>
-            <div class="info__img">
-              <img src="./img/face.svg" alt="smile" />
-            </div>
-            <div class="info__description">
-              Мы создаем комплексные решения и делаем лучше целые регионы нашей страны
-            </div>
-          </div>
-        </div>
+            <div class="about__info swiper-slide">
 
-        <h1>Почему выбирают нас?</h1>
+              <div class="info__content">
+                <h2 class="info__title">Автоматизация рутины</h2>
+                <div class="info__img">
+                  <img src="./img/automation.svg" alt="automation" />
+                </div>
+                <div class="info__description">
+                  Перенесем ваши бизнес-процессы в цифру: меньше ошибок — меньше
+                  затраченных средств, вплоть до 80%
+                </div>
+              </div>
 
-        <div class="about__info">
-          <div class="info__content">
-            <h2 class="info__title">Гарантия безопасности</h2>
-            <div class="info__img">
-              <img src="./img/shield.svg" alt="shield" />
-            </div>
-            <div class="info__description">
-              Соответствуем 152-ФЗ «О персональных данных» — все серверы
-              расположены в России, шифруем информацию по стандартам,
-              одобренным в РФ
-            </div>
-          </div>
+              <div class="info__content">
+                <h2 class="info__title">Опыт с региональными проектами</h2>
+                <div class="info__img">
+                  <img src="./img/face.svg" alt="smile" />
+                </div>
+                <div class="info__description">
+                  Мы создаем комплексные решения и делаем лучше целые регионы нашей страны
+                </div>
+              </div>
 
-          <div class="info__content">
-            <h2 class="info__title">Делаем сложное — простым</h2>
-            <div class="info__img">
-              <img src="./img/hands.svg" alt="hands" />
             </div>
-            <div class="info__description">
-              Даже если вам сложно описать вашу идею, опытные аналитики
-              помогут вам, консультация бесплатна
+
+
+            <h1>Почему выбирают нас?</h1>
+
+            <div class="about__info swiper-slide">
+              <div class="info__content">
+                <h2 class="info__title">Гарантия безопасности</h2>
+                <div class="info__img">
+                  <img src="./img/shield.svg" alt="shield" />
+                </div>
+                <div class="info__description">
+                  Соответствуем 152-ФЗ «О персональных данных» — все серверы
+                  расположены в России, шифруем информацию по стандартам,
+                  одобренным в РФ
+                </div>
+              </div>
+
+              <div class="info__content">
+                <h2 class="info__title">Делаем сложное — простым</h2>
+                <div class="info__img">
+                  <img src="./img/hands.svg" alt="hands" />
+                </div>
+                <div class="info__description">
+                  Даже если вам сложно описать вашу идею, опытные аналитики
+                  помогут вам, консультация бесплатна
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
 
@@ -741,6 +751,7 @@
   <!-- popup end -->
 
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="./js/main.js"></script>
 </body>
 

@@ -212,18 +212,16 @@ menuNav.forEach((item, index) => {
 
 // section info slides start
 
-const infos = document.querySelectorAll(".about__info");
-
-let index = 0;
-
-infos[index].classList.add("active");
-
-setInterval(() => {
-  infos[index].classList.remove("active");
-
-  index = (index + 1) % infos.length;
-
-  infos[index].classList.add("active");
-}, 5000);
-
+if (window.innerWidth <= 1024) {
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 50,
+    centeredSlides: true,
+    loop: true,
+    allowTouchMove: false,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+  });
+}
 // section info slides start
