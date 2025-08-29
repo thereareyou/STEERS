@@ -300,6 +300,10 @@ h3 {
   flex-wrap: wrap;
 }
 
+.portfolio__carousel-mobile {
+  display: none;
+}
+
 .carousel__img {
   width: 402px;
   height: 426px;
@@ -320,14 +324,6 @@ h3 {
 
 .carousel__img.active {
   display: flex;
-}
-
-.carousel__img-mobile {
-  display: none;
-}
-
-.carousel__img-mobile img {
-  height: 580px;
 }
 
 .carousel__content {
@@ -1484,7 +1480,6 @@ h3 {
     margin: 0;
   }
 
-
   .info__content:nth-child(1) {
     margin-bottom: 30px;
   }
@@ -1516,25 +1511,21 @@ h3 {
     font-size: 30px;
   }
 
-  .carousel__img,
-  .carousel__img.active {
+  .portfolio__carousel {
     display: none;
   }
 
-  .carousel__img-mobile.active {
+  .portfolio__carousel-mobile {
     display: block;
   }
 
-  .portfolio__carousel {
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
-
-  .carousel__content {
+  .portfolio__carousel-mobile {
     width: 650px;
     height: 912px;
+    display: block;
     margin: 0 auto;
-    padding: 25px;
+    padding: 30px;
+    position: relative;
 
     background-image: url("../img/portfolio-bg-mobile.svg");
     background-repeat: no-repeat;
@@ -1542,12 +1533,68 @@ h3 {
     background-size: 100% 100%;
   }
 
-  .carousel__btns {
-    display: none;
+  .carousel__content-mobile {
   }
 
-  .carousel__title {
-    display: none;
+  .portfolio-swiper {
+    display: flex !important;
+    height: 100% !important;
+  }
+
+  .carousel__company-name-mobile {
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  .carousel__description-mobile{
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .carousel__title-mobile{
+    opacity: 50%;
+    font-size: 25px;
+  }
+
+  .carousel__img-mobile {
+    height: 590px;
+    width: 590px;
+    margin: 0 auto;
+  }
+
+  .carousel__img-mobile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  .slide-number {
+    position: absolute;
+    top: 3px;
+    right: 20px;
+    width: 75px;
+    height: 75px;
+    background: #ae0620;
+    border-radius: 50%;
+    color: #fffafa;
+    font-size: 26px;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel__dot-mobile {
+    width: 10px;
+    height: 10px;
+    background: #ae0620;
+    border-radius: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
 
   .info__storage,

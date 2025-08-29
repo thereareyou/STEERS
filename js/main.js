@@ -213,7 +213,7 @@ menuNav.forEach((item, index) => {
 // section info slides start
 
 if (window.innerWidth <= 1024) {
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".about-swiper", {
     spaceBetween: 50,
     centeredSlides: true,
     loop: true,
@@ -225,3 +225,37 @@ if (window.innerWidth <= 1024) {
   });
 }
 // section info slides start
+
+// portfolio slides start
+
+var swiper = new Swiper(".portfolio-swiper", {
+  loop: true,
+  spaceBetween: 30,
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  on: {
+    realIndexChange: function () {
+      updateSlideNumber(this);
+    },
+    slideChangeTransitionStart: function () {
+      updateSlideNumber(this);
+    },
+  },
+});
+
+function updateSlideNumber(swiper) {
+  const el = document.querySelector(".slide-number");
+  el.classList.remove("show");
+  setTimeout(() => {
+    const number = swiper.realIndex + 1;
+    el.textContent = number.toString().padStart(2, "0");
+    el.classList.add("show");
+  }, 100);
+}
+
+// portfolio slides start
