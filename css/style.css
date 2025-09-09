@@ -1547,13 +1547,13 @@ h3 {
     font-weight: 600;
   }
 
-  .carousel__description-mobile{
+  .carousel__description-mobile {
     font-size: 25px;
     margin-top: 15px;
     margin-bottom: 15px;
   }
 
-  .carousel__title-mobile{
+  .carousel__title-mobile {
     opacity: 50%;
     font-size: 25px;
   }
@@ -1587,7 +1587,40 @@ h3 {
     align-items: center;
   }
 
-  .carousel__dot-mobile {
+  .swiper-pagination {
+    width: 125px !important; /* фиксированная ширина */
+    left: 50% !important; /* выровнять по центру */
+    transform: translateX(-50%) !important;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .swiper-pagination-bullet {
+    background: #ae0620 !important;
+    width: 10px !important;
+    height: 10px !important;
+    transition: all 0.3s ease !important;
+    opacity: 1 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #ae0620 !important;
+    width: 50px !important;
+    height: 10px !important;
+    border-radius: 20px !important;
+  }
+
+  .carousel__dots {
+    width: 100px;
+    color: #ae0620;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    z-index: 1;
+  }
+
+  .carousel__dot {
     width: 10px;
     height: 10px;
     background: #ae0620;
@@ -1595,6 +1628,13 @@ h3 {
     z-index: 1000;
     cursor: pointer;
     transition: all 0.3s ease;
+  }
+
+  .carousel__dot.active {
+    width: 50px;
+    height: 10px;
+    background: #ae0620;
+    border-radius: 20px;
   }
 
   .info__storage,

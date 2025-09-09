@@ -239,6 +239,12 @@ var swiper = new Swiper(".portfolio-swiper", {
     el: ".swiper-pagination",
   },
   on: {
+    init: function () {
+      const el = document.querySelector(".slide-number");
+      const number = this.realIndex + 1;
+      el.textContent = number.toString().padStart(2, "0");
+      el.classList.add("show");
+    },
     realIndexChange: function () {
       updateSlideNumber(this);
     },
