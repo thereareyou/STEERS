@@ -265,3 +265,17 @@ function updateSlideNumber(swiper) {
 }
 
 // portfolio slides start
+
+// products slider start
+if (window.innerWidth <= 1024) {
+  var swiper = new Swiper(".products-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: false,
+    },
+  });
+}
+// products slider end
