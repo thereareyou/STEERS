@@ -112,6 +112,7 @@ letterSlider.addEventListener(
 // popup start
 
 const contactBtn = document.querySelector(".header__btn");
+const contactBtnAdaptiveMedium = document.querySelector(".adaptive-medium-btn");
 const contactBtnMobile = document.querySelector(".contact-btn");
 const menuContactBtn = document.querySelector(".menu-contact-btn");
 const popUpWindow = document.querySelector(".modal");
@@ -124,6 +125,11 @@ contactBtn.addEventListener("click", () => {
 });
 
 contactBtnMobile.addEventListener("click", () => {
+  popUpWindow.classList.add("active");
+  document.body.classList.add("no-scroll");
+});
+
+contactBtnAdaptiveMedium.addEventListener("click", () => {
   popUpWindow.classList.add("active");
   document.body.classList.add("no-scroll");
 });
