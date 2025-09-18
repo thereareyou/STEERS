@@ -899,6 +899,15 @@ h3 {
   border-radius: 6px;
   cursor: pointer;
 }
+
+.adaptive-medium-btn {
+  display: none;
+}
+
+.details-mobile-small{
+  display: none !important;
+}
+
 /* contacts end */
 
 /* footer start */
@@ -1260,6 +1269,7 @@ h3 {
 
   .our-contacts_details {
     font-size: 22px;
+    margin-top: 198px;
   }
 
   .contacts__feedback {
@@ -1776,7 +1786,7 @@ h3 {
     width: 250px;
   }
 
-  .bottom-section{
+  .bottom-section {
     flex-wrap: wrap;
   }
 }
@@ -1786,9 +1796,161 @@ h3 {
   .container {
     width: 540px;
   }
+
+  body {
+    font-size: 15px;
+  }
+
+  .info__title {
+    max-width: 430px;
+    font-size: 34px;
+    margin-bottom: 0;
+  }
+
+  .info__img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .info__description {
+    font-size: 28px;
+    margin-top: auto;
+  }
+
+  .portfolio__content h1 {
+    width: 540px;
+  }
+
+  .portfolio__carousel-mobile {
+    width: 540px;
+    height: 825px;
+  }
+
+  .carousel__img-mobile {
+    height: 480px;
+    width: 480px;
+  }
+
+  .slide-number {
+    top: -1px;
+    right: 5px;
+  }
+
+  .slider__img {
+    width: 450px;
+  }
+
+  .products__info {
+    height: 730px;
+  }
+
+  .products__title {
+    width: 540px;
+  }
+
+  .info__top-block {
+    width: 497px;
+    height: 362px;
+    padding: 20px;
+  }
+
+  .info__text {
+    margin: 0;
+  }
+
+  .info__storage .info__text {
+    margin: 0;
+  }
+
+  .price {
+    margin-top: auto;
+    font-size: 35px;
+  }
+
+  .info__bottom-block {
+    width: 497px;
+    height: 453px;
+    margin-top: -120px;
+  }
+
+  .bottom-block__title {
+    font-size: 27px !important;
+  }
+
+  .info__storage h2 {
+    width: 390px;
+  }
+
+  .products__info h2 {
+    font-size: 39px;
+  }
+
+  .advantages {
+    font-size: 21px;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    height: 250px;
+  }
+
+  .bottom-block__btn {
+    height: 55px;
+  }
+
+  .technologies__content h1 {
+    width: 540px;
+  }
+
+  .list__items {
+    width: 500px;
+  }
+
+  .wrapper {
+    width: 470px;
+  }
+
+  .wrapper:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .wrapper__title {
+    font-size: 28px;
+    width: 320px;
+  }
+
+  .wrapper__time {
+    font-size: 25px;
+  }
+
+  .wrapper__img {
+    max-width: 95px;
+  }
+
+  .wrapper__number {
+    font-size: 22px;
+  }
+
+  .contacts__our-contacts {
+    width: 540px;
+  }
+
+  .contacts__our-contacts h1 {
+    font-size: 65px;
+  }
+
+  .our-contacts__red {
+    font-size: 45px;
+  }
+
+  .details-mobile-small{
+    display: flex !important;
+  }
+
+  .footer__company {
+    display: none;
+  }
 }
 
-/* extra small 320-567px */
+/* extra small 320-576px */
 @media (max-width: 576px) {
   .container {
     width: 100%;
