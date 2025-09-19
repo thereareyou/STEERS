@@ -1827,7 +1827,7 @@ h3 {
   }
 
   .portfolio__content h1 {
-    width: 540px;
+    width: auto;
   }
 
   .portfolio__carousel-mobile {
@@ -1854,7 +1854,7 @@ h3 {
   }
 
   .products__title {
-    width: 540px;
+    width: auto;
   }
 
   .info__top-block {
@@ -1906,7 +1906,7 @@ h3 {
   }
 
   .technologies__content h1 {
-    width: 540px;
+    width: auto;
   }
 
   .list__items {
@@ -1952,6 +1952,11 @@ h3 {
 
   .our-contacts__opacity {
     font-size: 27px;
+  }
+
+  .adaptive-medium-btn {
+    margin-top: 40px;
+    height: 80px;
   }
 
   .our-contacts_details {
@@ -2018,5 +2023,99 @@ h3 {
   .container {
     width: 100%;
     padding: 0 15px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .arrow {
+    margin-top: 50px;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .info__content {
+    width: 353px;
+    height: 180px;
+    padding: 15px;
+  }
+
+  .info__title {
+    max-width: 270px;
+    font-size: 22px;
+  }
+
+  .info__description {
+    font-size: 18px;
+  }
+
+  .info__img {
+    width: 40px;
+    height: 40px;
+  }
+  .info__img img {
+    width: 28px;
+  }
+
+  .portfolio__carousel-mobile {
+    width: 337px;
+    height: 570px;
+    padding: 25px;
+  }
+
+  .carousel__company-name-mobile {
+    font-size: 32px;
+  }
+
+  .carousel__img-mobile {
+    height: 287px;
+    width: 287px;
+  }
+
+  .carousel__description-mobile,
+  .carousel__title-mobile {
+    font-size: 18px;
+  }
+
+  .slide-number {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    top: 7px;
+    right: 6px;
+  }
+
+  .list__items {
+    flex-wrap: nowrap;
+    align-items: center;
+    width: auto;
+  }
+
+  .services__content h1 {
+    width: auto;
+    font-size: 40px;
+  }
+
+  .wrapper {
+    width: 280px;
+  }
+
+  .wrapper__title {
+    width: 150px;
+  }
+
+  .contacts__our-contacts h1 {
+    font-size: 50px;
+  }
+
+  .our-contacts__red {
+    font-size: 26px;
+  }
+
+  .company__links {
+    width: auto;
   }
 }
