@@ -908,6 +908,10 @@ h3 {
   display: none !important;
 }
 
+.adaptive-phone-btn {
+  display: none;
+}
+
 /* contacts end */
 
 /* footer start */
@@ -1284,7 +1288,7 @@ h3 {
 
   .footer {
     height: auto;
-    margin-bottom: 23px;
+    padding-bottom: 23px;
   }
 
   .top-section {
@@ -2033,6 +2037,29 @@ h3 {
     margin-top: 50px;
   }
 
+  .header {
+    margin-top: 75px;
+  }
+
+  .header-placeholder {
+    margin-top: 75px;
+    height: 73px;
+  }
+
+  .header-menu-fixed {
+    position: fixed;
+    top: 0px;
+  }
+
+  .header.sticky {
+    position: sticky;
+    top: 0px;
+  }
+
+  .header__content {
+    height: 70px;
+  }
+
   .header__btn {
     display: none;
   }
@@ -2060,10 +2087,19 @@ h3 {
     width: 28px;
   }
 
+  .portfolio__content h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
   .portfolio__carousel-mobile {
     width: 337px;
     height: 570px;
     padding: 25px;
+  }
+
+  .portfolio-swiper {
+    height: 101% !important;
   }
 
   .carousel__company-name-mobile {
@@ -2088,31 +2124,242 @@ h3 {
     right: 6px;
   }
 
+  .swiper-pagination {
+    width: auto !important;
+    margin-top: auto !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 29px !important;
+    height: 8px;
+  }
+
+  .portfolio__description {
+    display: none;
+  }
+
+  .portfolio__letters .portfolio__description {
+    display: block !important;
+    margin-top: 35px;
+    margin-bottom: 50px;
+  }
+
+  .portfolio__download {
+    display: none;
+  }
+
+  .slider__img {
+    width: 290px;
+  }
+
+  .products__info {
+    height: 500px;
+  }
+
+  .products__info .swiper-pagination {
+    width: 60px !important;
+  }
+
+  .info__manager {
+    background: url(../img/products-bg-white-mobile.svg) no-repeat;
+  }
+
+  .info__manager-adv {
+    background: url(../img/products-bg-white-mobile2.svg) no-repeat;
+  }
+
+  .info__storage {
+    background: url(../img/products-bg-red-mobile.svg) no-repeat;
+  }
+
+  .info__storage-adv {
+    background: url(../img/products-bg-red-mobile2.svg) no-repeat;
+  }
+
+  .info__storage h2 {
+    width: 250px;
+    hyphens: auto;
+  }
+
+  .info__top-block {
+    width: 354px;
+    height: 233px;
+  }
+
+  .info__bottom-block {
+    width: 354px;
+    height: 295px;
+    margin-top: -65px;
+    padding: 24px 16px 20px 33px;
+  }
+
+  .info__text {
+    width: auto;
+    font-size: 18px;
+    margin-bottom: 40px;
+    width: 250px;
+  }
+
+  .info__storage .info__text {
+    display: none;
+  }
+
+  .products__info h2 {
+    font-size: 32px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .price span {
+    font-size: 18px;
+  }
+
+  .bottom-block__title {
+    font-size: 20px !important;
+  }
+
+  .advantages {
+    font-size: 15px;
+    height: auto;
+    margin-top: 30px;
+    line-height: 1.4em;
+  }
+
+  .advantages__list::marker {
+    font-size: 20px;
+  }
+
+  .bottom-block__btn {
+    width: 158px;
+    height: 37px;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .bottom-block__btn img {
+    width: 6px;
+  }
+
+  .technologies__wrapper {
+    height: auto;
+  }
+
+  .technologies__content h1 {
+    margin-bottom: 25px;
+  }
+
+  .list__title {
+    margin-bottom: 45px;
+    font-size: 30px;
+  }
+
   .list__items {
     flex-wrap: nowrap;
     align-items: center;
     width: auto;
+    font-size: 25px;
+    height: auto;
+  }
+
+  .list__items li {
+    width: 300px;
+  }
+
+  .list__items li {
+    margin-bottom: 30px;
+  }
+
+  .list__items li:last-child {
+    margin-bottom: 50px;
   }
 
   .services__content h1 {
     width: auto;
     font-size: 40px;
+    margin-bottom: 45px;
   }
 
   .wrapper {
-    width: 280px;
+    width: 356px;
+    height: 168px;
+    padding: 20px;
   }
 
   .wrapper__title {
-    width: 150px;
+    width: 230px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .wrapper__time {
+    font-size: 20px;
+  }
+
+  .wrapper__number {
+    font-size: 22px;
+  }
+
+  .wrapper__img {
+    max-width: 78px;
+    margin-bottom: 0;
+  }
+
+  .services__btn {
+    width: 281px;
+    height: 63px;
+    font-size: 20px;
   }
 
   .contacts__our-contacts h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .our-contacts__red {
-    font-size: 26px;
+    font-size: 30px;
+  }
+
+  .our-contacts__opacity {
+    font-size: 15px;
+  }
+
+  .adaptive-medium-btn {
+    display: none;
+  }
+
+  .adaptive-phone-btn {
+    width: 311px;
+    height: 63px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .our-contacts_details {
+    font-size: 25px;
+    margin-bottom: 35px;
+    margin-top: 50px;
+  }
+
+  .logo__img {
+    width: 140px;
+  }
+
+  .logo__img a img {
+    width: 40px;
+  }
+
+  .footer {
+    margin-top: 20px;
   }
 
   .company__links {
