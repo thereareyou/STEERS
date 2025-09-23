@@ -196,6 +196,11 @@ h3 {
   width: 131px;
 }
 
+.logo__text-bottom{
+  font-size: 15px;
+  font-weight: 400;
+}
+
 .header__nav {
   margin-right: 80px;
   margin-left: auto;
@@ -205,6 +210,10 @@ h3 {
 .header__btn {
   width: 235px;
   height: 59px;
+}
+
+.contact-btn-mobile {
+  display: none;
 }
 
 /* header end */
@@ -1063,7 +1072,9 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  top: 15%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal__close-btn {
@@ -1302,7 +1313,7 @@ h3 {
   }
 
   .logo a img {
-    width: 36;
+    width: 36px;
     height: 74px;
   }
 
@@ -2029,6 +2040,10 @@ h3 {
     padding: 0 15px;
   }
 
+  section {
+    padding-top: 80px;
+  }
+
   h1 {
     font-size: 40px;
   }
@@ -2039,6 +2054,57 @@ h3 {
 
   .header {
     margin-top: 75px;
+  }
+
+  .logo__text {
+    font-size: 18px;
+    align-items: center;
+  }
+
+  .logo__text-bottom{
+    font-size: 10px;
+  }
+
+  .header__logo a img {
+    width: 22px;
+    height: 42px;
+  }
+
+  .header__mobile-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-btn-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .menu-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu-cancel-btn.active {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu-btn img {
+    width: 20px;
+  }
+
+  .menu-cancel-btn img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .mobile-menu__content {
+    font-size: 18px;
+    padding: 25% 16px 30%;
   }
 
   .header-placeholder {
@@ -2360,9 +2426,60 @@ h3 {
 
   .footer {
     margin-top: 20px;
+    height: 100%;
+  }
+
+  .top-section {
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
+
+  .footer {
+    padding-bottom: 0;
+  }
+
+  .footer__logo {
+    align-content: center;
+  }
+
+  .logo {
+    width: 110px;
+    height: auto;
+    padding: 0;
+  }
+
+  .logo a img {
+    width: 27px;
+    height: 52px;
+  }
+
+  .logo__text-footer span {
+    font-size: 20px;
+  }
+
+  .logo__development {
+    font-size: 12px !important;
+  }
+
+  .logo__opacity {
+    font-size: 12px;
+    margin: 0;
+    margin-top: 10px;
   }
 
   .company__links {
     width: auto;
+    font-size: 14px;
+  }
+
+  .bottom-section {
+    font-size: 10px;
+    flex-direction: column-reverse;
+    margin-top: 0;
+  }
+
+  .bottom-section span {
+    margin: 0 auto;
+    margin-bottom: 10px;
   }
 }

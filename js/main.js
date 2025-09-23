@@ -2,10 +2,18 @@
 const header = document.querySelector(".header");
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY > 90 && !mobileMenu.classList.contains("active")) {
-    header.classList.add("sticky");
+  if (window.innerWidth < 577) {
+    if (window.scrollY > 60 && !mobileMenu.classList.contains("active")) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
   } else {
-    header.classList.remove("sticky");
+    if (window.scrollY > 90 && !mobileMenu.classList.contains("active")) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
   }
 });
 //header sticky end
@@ -113,7 +121,7 @@ letterSlider.addEventListener(
 
 const contactBtn = document.querySelector(".header__btn");
 const contactBtnAdaptiveMedium = document.querySelector(".adaptive-medium-btn");
-const contactBtnMobile = document.querySelector(".contact-btn");
+const contactBtnMobile = document.querySelector(".contact-btn-mobile");
 const menuContactBtn = document.querySelector(".menu-contact-btn");
 const popUpWindow = document.querySelector(".modal");
 const popUpWindowContent = document.querySelector(".modal__content");
@@ -124,19 +132,18 @@ contactBtn.addEventListener("click", () => {
   document.body.classList.add("no-scroll");
 });
 
-contactBtnMobile.addEventListener("click", () => {
-  popUpWindow.classList.add("active");
-  document.body.classList.add("no-scroll");
-});
-
 contactBtnAdaptiveMedium.addEventListener("click", () => {
   popUpWindow.classList.add("active");
   document.body.classList.add("no-scroll");
 });
 
 menuContactBtn.addEventListener("click", () => {
-  popUpWindow.classList.add("active");
-  document.body.classList.add("no-scroll");
+  if (window.innerWidth <= 577) {
+    window.location.href = "tel:+380999999999";
+  } else {
+    popUpWindow.classList.add("active");
+    document.body.classList.add("no-scroll");
+  }
 });
 
 popUpClosebtn.addEventListener("click", () => {
