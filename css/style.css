@@ -138,12 +138,18 @@ h3 {
   transition: 0.3s;
 }
 
-.bg-fixed-demo {
+.bg-fixed-demo::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url("../img/bg.svg"), url("../img/bg-2.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: left 825px top 0, right 480px bottom -265px;
   background-size: 1080px auto, 1080px auto;
-  background-attachment: fixed, fixed;
+  z-index: -1; /* чтобы было за контентом */
 }
 
 .header__mobile-btns {
@@ -196,7 +202,7 @@ h3 {
   width: 131px;
 }
 
-.logo__text-bottom{
+.logo__text-bottom {
   font-size: 15px;
   font-weight: 400;
 }
@@ -1120,9 +1126,8 @@ h3 {
     font-size: 55px;
   }
 
-  .bg-fixed-demo {
+  .bg-fixed-demo::before {
     background-position: left 450px top 0, right 310px bottom -190px;
-    background-size: 850px auto, 850px auto;
   }
 
   .container {
@@ -1384,6 +1389,10 @@ h3 {
 @media (max-width: 1024px) {
   .container {
     width: 720px;
+  }
+
+  .bg-fixed-demo::before {
+    background-position: left 230px top 0, right 130px bottom -190px;
   }
 
   h3 {
@@ -2040,6 +2049,11 @@ h3 {
     padding: 0 15px;
   }
 
+  .bg-fixed-demo::before {
+    background-position: left -150px top 0px, right -110px bottom -160px;
+    background-size: 850px auto, 850px auto;
+  }
+
   section {
     padding-top: 80px;
   }
@@ -2056,12 +2070,16 @@ h3 {
     margin-top: 75px;
   }
 
+  .header-menu-fixed {
+    /* transition: 1s; */
+  }
+
   .logo__text {
     font-size: 18px;
     align-items: center;
   }
 
-  .logo__text-bottom{
+  .logo__text-bottom {
     font-size: 10px;
   }
 
@@ -2130,9 +2148,14 @@ h3 {
     display: none;
   }
 
+  .about__info {
+    display: flex !important;
+    align-items: center !important;
+  }
+
   .info__content {
-    width: 353px;
-    height: 180px;
+    max-width: 450px;
+    height: 190px;
     padding: 15px;
   }
 
