@@ -292,3 +292,24 @@ if (window.innerWidth <= 1024) {
   });
 }
 // products slider end
+
+const fileInput = document.getElementById("fileInput");
+const fileName = document.getElementById("fileName");
+const fileInputMoldal = document.getElementById("fileInputModal");
+const fileNameModal = document.getElementById("fileNameModal");
+
+fileInput.addEventListener("change", function () {
+  if (fileInput.files.length > 0) {
+    fileName.textContent = fileInput.files[0].name;
+  } else {
+    fileName.textContent = "Файл не выбран";
+  }
+});
+
+fileInputMoldal.addEventListener("change", function () {
+  if (fileInputMoldal.files.length > 0) {
+    fileNameModal.textContent = fileInputMoldal.files[0].name;
+  } else {
+    fileNameModal.textContent = "Файл не выбран";
+  }
+});

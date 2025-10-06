@@ -793,7 +793,7 @@ h3 {
 
 .contacts__feedback {
   width: 595px;
-  height: 650px;
+  height: auto;
   border: 3px solid #ae0620;
   border-radius: 30px;
   padding: 30px 65px;
@@ -912,6 +912,14 @@ h3 {
   padding: 10px;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.file-name{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #8f0d21;
 }
 
 .adaptive-medium-btn {
@@ -1069,7 +1077,6 @@ h3 {
   position: fixed;
   background: #fffafa;
   max-width: 665px;
-  height: 775px;
   border: 3px solid #ae0620;
   border-radius: 30px;
   padding: 60px 47px 40px;
@@ -1293,7 +1300,6 @@ h3 {
 
   .contacts__feedback {
     width: 525px;
-    height: 620px;
     padding: 22px 50px;
   }
 
@@ -1368,7 +1374,6 @@ h3 {
 
   .modal__content {
     padding: 40px 35px 25px;
-    height: 700px;
   }
 
   .mоdal__title {
