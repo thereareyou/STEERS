@@ -254,6 +254,10 @@ h3 {
   justify-content: space-between;
 }
 
+.about-swiper{
+  display: none !important;
+}
+
 .about__title {
   width: 100px;
 }
@@ -1512,6 +1516,7 @@ h3 {
     font-weight: 600;
   }
 
+
   .about__content h1 {
     display: none;
   }
@@ -1526,6 +1531,11 @@ h3 {
   .about__info {
     flex-direction: column;
     margin: 0;
+    display: none;
+  }
+
+  .about-swiper{
+    display: block !important;
   }
 
   .info__content:nth-child(1) {

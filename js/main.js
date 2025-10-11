@@ -293,6 +293,8 @@ if (window.innerWidth <= 1024) {
 }
 // products slider end
 
+//form file display start
+
 const fileInput = document.getElementById("fileInput");
 const fileName = document.getElementById("fileName");
 const fileInputMoldal = document.getElementById("fileInputModal");
@@ -313,3 +315,5 @@ fileInputMoldal.addEventListener("change", function () {
     fileNameModal.textContent = "Файл не выбран";
   }
 });
+
+//form file display end
