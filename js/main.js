@@ -225,7 +225,7 @@ menuNav.forEach((item, index) => {
 
 // section info slides start
 
-if (window.innerWidth <= 1024) {
+
   var swiper = new Swiper(".about-swiper", {
     spaceBetween: 50,
     centeredSlides: true,
@@ -236,7 +236,7 @@ if (window.innerWidth <= 1024) {
       disableOnInteraction: false,
     },
   });
-}
+  
 // section info slides start
 
 // portfolio slides start
@@ -280,7 +280,6 @@ function updateSlideNumber(swiper) {
 // portfolio slides start
 
 // products slider start
-if (window.innerWidth <= 1024) {
   var swiper = new Swiper(".products-swiper", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -290,7 +289,7 @@ if (window.innerWidth <= 1024) {
       clickable: false,
     },
   });
-}
+  
 // products slider end
 
 //form file display start
