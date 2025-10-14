@@ -98,24 +98,19 @@ dots.forEach((dot, index) => {
 });
 //carousel end
 
-// slider start
-const letterSlider = document.querySelector(".slider");
+// letters start
 
-letterSlider.addEventListener(
-  "wheel",
-  (e) => {
-    if (e.deltaY !== 0) {
-      e.preventDefault();
-      letterSlider.scrollBy({
-        left: e.deltaY < 0 ? -100 : 100,
-        behavior: "smooth",
-      });
-    }
+var swiper = new Swiper(".letters-swiper", {
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
-  { passive: false }
-);
+});
 
-//slider end
+//letters end
 
 // popup start
 
@@ -225,18 +220,17 @@ menuNav.forEach((item, index) => {
 
 // section info slides start
 
+var swiper = new Swiper(".about-swiper", {
+  spaceBetween: 50,
+  centeredSlides: true,
+  loop: true,
+  allowTouchMove: false,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+});
 
-  var swiper = new Swiper(".about-swiper", {
-    spaceBetween: 50,
-    centeredSlides: true,
-    loop: true,
-    allowTouchMove: false,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-  });
-  
 // section info slides start
 
 // portfolio slides start
@@ -280,16 +274,16 @@ function updateSlideNumber(swiper) {
 // portfolio slides start
 
 // products slider start
-  var swiper = new Swiper(".products-swiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: false,
-    },
-  });
-  
+var swiper = new Swiper(".products-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: false,
+  },
+});
+
 // products slider end
 
 //form file display start

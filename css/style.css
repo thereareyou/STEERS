@@ -169,6 +169,21 @@ h3 {
   z-index: 100;
 }
 
+.swiper-pagination-bullet {
+  background: #ae0620 !important;
+  width: 10px !important;
+  height: 10px !important;
+  transition: all 0.3s ease !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ae0620 !important;
+  width: 50px !important;
+  height: 10px !important;
+  border-radius: 20px !important;
+}
+
 /* general end */
 
 /* header start */
@@ -394,7 +409,7 @@ h3 {
 .carousel__btn-prev:active,
 .carousel__btn-next:active {
   transform: scale(0.9);
-  transition: transform 0.2s ease;
+  transition: transform 0.1s ease;
 }
 
 .portfolio__btn {
@@ -468,30 +483,13 @@ h3 {
   justify-content: center;
 }
 
-.portfolio__letters {
-  max-width: 1190px;
+.letters-swiper {
+  height: 400px !important;
 }
 
-.letters__slider-wrapper {
-  transition: transform 0.5s ease;
-}
-
-.slider {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-
-.slider__img {
-  margin-right: 25px;
-  scroll-snap-align: start;
-  flex: 0 0 auto;
-  height: auto;
-}
-
-.slider::-webkit-scrollbar {
-  display: none;
+.letters-slide {
+  width: 504px !important;
+  height: 346px !important;
 }
 
 /* portfolio end */
@@ -1204,8 +1202,13 @@ h3 {
     margin-bottom: 35px;
   }
 
-  .portfolio__letters {
-    max-width: 960px;
+  .letters-swiper {
+    height: 350px !important;
+  }
+
+  .letters-slide {
+    width: 399px !important;
+    height: auto !important;
   }
 
   .info__top-block {
@@ -1594,9 +1597,6 @@ h3 {
     background-size: 100% 100%;
   }
 
-  .carousel__content-mobile {
-  }
-
   .portfolio-swiper {
     display: flex !important;
     height: 100% !important;
@@ -1649,26 +1649,19 @@ h3 {
   }
 
   .swiper-pagination {
-    width: 125px !important; /* фиксированная ширина */
-    left: 50% !important; /* выровнять по центру */
+    width: 125px !important;
+    left: 50% !important;
     transform: translateX(-50%) !important;
     display: flex;
     justify-content: space-between;
   }
 
-  .swiper-pagination-bullet {
-    background: #ae0620 !important;
-    width: 10px !important;
-    height: 10px !important;
-    transition: all 0.3s ease !important;
-    opacity: 1 !important;
+  .letters-swiper {
+    height: 390px !important;
   }
 
-  .swiper-pagination-bullet-active {
-    background: #ae0620 !important;
-    width: 50px !important;
-    height: 10px !important;
-    border-radius: 20px !important;
+  .letters-slide {
+    width: 530px !important;
   }
 
   .products__info {
@@ -1897,6 +1890,14 @@ h3 {
 
   .slider__img {
     width: 450px;
+  }
+
+  .letters-slide {
+    width: 380px !important;
+  }
+
+  .letters-swiper {
+    height: 300px !important;
   }
 
   .products__info {
@@ -2268,12 +2269,16 @@ h3 {
     display: none;
   }
 
-  .slider__img {
-    width: 290px;
+  .letters-slide {
+    width: 280px !important;
+  }
+
+  .letters-swiper {
+    height: 230px !important;
   }
 
   .products__info {
-    height: 500px;
+    height: 495px;
   }
 
   .products__info .swiper-pagination {
